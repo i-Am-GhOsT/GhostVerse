@@ -3,4 +3,4 @@ Welcome To GhostVerse, this repo is created to share study material and notes re
 
 ## Curated List Of Topics To Study
 
-- [**DevOps : Roadmap, Study Materials, Interview Tips, Questions.**](https://github.com/i-Am-GhOsT/DevOps)
+- [**DevOps : Roadmap, Study Materials, Interview Tips, Questions.**](https://i-am-ghost.github.io/DevOps/)
