@@ -4,6 +4,6 @@
 
 ## Curated List Of Topics To Study
 
-- 🔥 [**DevOps : Roadmap, Study Materials, Interview Tips, Questions.**](https://i-am-ghost.github.io/DevOps/)
+- 🔥 [Click Here - Gh05tVerse ](Gh05tVerse/docs/index.md)
 
 ---
