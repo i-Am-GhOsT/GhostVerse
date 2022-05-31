@@ -1,9 +1,9 @@
 # GhostVerse
-❤️‍🔥 Welcome To GhostVerse, This Repo is Created To Share Study Material & Notes Related To Computer Science Engineering and its' domains that are popular these days.
 
+## **Dijkstra Algorithm**
 
-## Curated List Of Topics To Study
-
-- 🔥 [Click Here - Gh05tVerse ](Gh05tVerse/docs/index.md)
-
+---
+<div>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6937275522104123392" height="1070" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+</div>
 ---
