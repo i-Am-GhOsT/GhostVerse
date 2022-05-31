@@ -1,0 +1,34 @@
+site_name: 🥷 GhostVerse
+site_url: https://i-am-ghost.github.io/GhostVerse/
+
+nav:
+  - 🏠 Home: index.md
+  - 📢 About: about.md
+  - 📚 Foundations: foundations.md
+  - 🦸 Interview : interview.md
+  - 📞 Contact Us: contacts.md
+  
+
+theme:
+    name: mkdocs
+    nav_style: dark
+    highlightjs: true
+    hljs_languages:
+      - yaml
+      - rust
+    shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+extra:
+  consent:
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+repo_url: https://github.com/i-Am-GhOsT/GhostVerse

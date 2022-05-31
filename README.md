@@ -1,16 +1,11 @@
 # GhostVerse
-❤️‍🔥 Welcome To GhostVerse, This Repo is Created To Share Study Material & Notes Related To Computer Science Engineering and its' domains that are popular these days.
+
+## **Dijkstra Algorithm**
 
 ---
-## Motto
 
-```1. Free Knowledge```
-```2. Help Others```
-```3. Share Experience```
-```4. Maintain Documentation```
-
-## Curated List Of Topics To Study
-
-- 🔥 [**DevOps : Roadmap, Study Materials, Interview Tips, Questions.**](https://i-am-ghost.github.io/DevOps/)
+<div>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6937275522104123392" height="1070" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+</div>
 
 ---
