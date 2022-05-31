@@ -3,14 +3,14 @@ name: Publish Docs Via Github Pages
 on:
   push:
     branches:
-      - FormatGhostVerse
+      - main
 
 jobs:
   build:
     name: Deply Linux Container And Docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Current Branch
+      - name: Checkout main Branch
         uses: actions/checkout@v2
       
       - name: Deply Docs
