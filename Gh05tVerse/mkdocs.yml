@@ -3,7 +3,6 @@ site_url: https://i-am-ghost.github.io/GhostVerse/
 
 nav:
   - 🏠 Home: index.md
-  - 📢 About: about.md
   - 📚 Foundations: foundations.md
   - 🦸 Interview : interview.md
   - 📞 Contact Us: contacts.md
