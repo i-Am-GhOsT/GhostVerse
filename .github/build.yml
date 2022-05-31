@@ -13,10 +13,11 @@ jobs:
       - name: Checkout main Branch
         uses: actions/checkout@v2
       
-      - name: Deply Docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: folder/mkdocs.yml
-          # GITHUB_DOMAIN: github.myenterprise.com
-          REQUIREMENTS: ~/source/requirements.txt
+      - name: Setup Python
+        uses: actions/setup-python@v2
+      - name: Setup Mkdocs Project
+        uses: aahnik/setup-pyproject@main
+      - name: Build Docs
+        run: poetry run mkdocs build -f
+      - name: Publish docs
+        run: poetry run mkdocs gh-deploy
