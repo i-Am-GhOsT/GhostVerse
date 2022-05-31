@@ -1,0 +1,22 @@
+name: Publish Docs Via Github Pages
+
+on:
+  push:
+    branches:
+      - FormatGhostVerse
+
+jobs:
+  build:
+    name: Deply Linux Container And Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Current Branch
+        uses: actions/checkout@v2
+      
+      - name: Deply Docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: folder/mkdocs.yml
+          # GITHUB_DOMAIN: github.myenterprise.com
+          REQUIREMENTS: ~/source/requirements.txt
