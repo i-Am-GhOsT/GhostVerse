@@ -1,0 +1,37 @@
+name: Continuous Integration
+
+on:
+  #schedule:
+  #  - cron: "0 07 * * *" # everyday at 7 am
+  #tags:
+  #  - "v*.*.*"
+  push:
+    branches:
+      - master
+      - GitHubActions
+  pull_request:
+    branches:
+      - master
+      - GitHubActions
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install Python
+        uses: actions/setup-python@v2
+      - name: Install Dependencies
+        run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        pip insatll mkdocs-material
+      - name: Configure Github Repo Details For Mail Notification
+        run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Deploy Github Pages
+        run: mkdocs gh-deploy --force
