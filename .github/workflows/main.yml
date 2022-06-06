@@ -55,7 +55,6 @@ jobs:
           echo [ Building The Webstie ]
           cd Gh05tVerse
           mkdocs build
-          pwd
           cd ..
           echo [ Completed Building The Website ]
 
@@ -64,5 +63,5 @@ jobs:
         run: |
           echo [ Deploy The Webstie ]
           cd Gh05tVerse
-          mkdocs serve --verbose
+          mkdocs gh-deploy
           echo [ Completed Building The Website ]
