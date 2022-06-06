@@ -49,15 +49,6 @@ jobs:
           pip install mkdocs mkdocs-material;
           echo [ Completed Installing Python Dependencies ];
 
-      # Build The mkdocs webstie
-      - name: Build mkdocs Webstie
-        run: >
-          echo [ Building The Webstie ];
-          cd Gh05tVerse;
-          mkdocs build;
-          cd ..;
-          echo [ Completed Building The Website ];
-
       # Deploy The mkdocs webstie
       - name: Deploy mkdocs Webstie
         run: >
