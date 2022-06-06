@@ -10,8 +10,6 @@ nav:
 
 theme:
     name: mkdocs
-    nav_style: dark
-    highlightjs: true
     font:
       text: Roboto
     hljs_languages:
