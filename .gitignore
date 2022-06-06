@@ -1,0 +1,12 @@
+# GhostVerse Project Related Source Code
+source/lib
+source/bin
+source/*.cfg
+source/*.pyc
+source/TO-DOs
+source/__pycache__
+
+
+TO-DOs.md
+
+Gh05tVerse/site/

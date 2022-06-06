@@ -1,4 +1,4 @@
-site_name: 🥷 GhostVerse
+site_name: GhostVerse
 site_url: https://i-am-ghost.github.io/GhostVerse/
 
 nav:
@@ -12,6 +12,8 @@ theme:
     name: mkdocs
     nav_style: dark
     highlightjs: true
+    font:
+      text: Roboto
     hljs_languages:
       - yaml
       - rust
@@ -20,6 +22,8 @@ theme:
         next: 78     # n
         previous: 80 # p
         search: 83   # s
+    logo: img/favicon.ico
+    favicon: img/logo.png
 
 extra:
   consent:
@@ -30,4 +34,9 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
 
-repo_url: https://github.com/i-Am-GhOsT/GhostVerse
+spec:
+  source: 
+    git:
+      ref: GhostVerse
+      url: https://github.com/i-Am-GhOsT/GhostVerse
+

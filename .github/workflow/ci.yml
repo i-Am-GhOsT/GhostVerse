@@ -1,34 +1,24 @@
-name: Continuous Integration
-
+name: Publish docs via GitHub Pages
 on:
-  #schedule:
-  #  - cron: "0 07 * * *" # everyday at 7 am
-  #tags:
-  #  - "v*.*.*"
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+
 jobs:
   build:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout current Repo
+      - name: Checkout main
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Install Python
-        uses: actions/setup-python@v2
-      - name: Install Dependencies
-        run: |
-        pip install --upgrade pip
-        pip install -r requirements.txt
-        pip insatll mkdocs-material
-      - name: Configure Github Repo Details For Mail Notification
-        run: |
-        git config user.name 'github-actions[bot]'
-        git config user.email 'github-actions[bot]@users.noreply.github.com'
-      - name: Deploy Github Pages
-        run: mkdocs gh-deploy --force
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #CUSTOM_DOMAIN: 
+          CONFIG_FILE: Gh05tVerse/mkdocs.yml
+          EXTRA_PACKAGES: build-base
+          #GITHUB_DOMAIN: i-am-ghost.github.io/GhostVerse
+          REQUIREMENTS: requirements.txt
