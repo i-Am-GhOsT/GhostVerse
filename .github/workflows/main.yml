@@ -45,14 +45,14 @@ jobs:
       # Runs Commands To Install Python Dependencies
       - name: Insatll Python Dependencies
         run: >
-          echo [ Installing The Python Dependencies ];
-          pip install mkdocs mkdocs-material;
-          echo [ Completed Installing Python Dependencies ];
+          echo [ Installing The Python Dependencies ]
+          pip install mkdocs mkdocs-material
+          echo [ Completed Installing Python Dependencies ]
 
       # Deploy The mkdocs webstie
       - name: Deploy mkdocs Webstie
-        run: >
-          echo [ Deploy The Webstie ];
-          cd Gh05tVerse;
-          mkdocs gh-deploy --config-file ./Gh05tVerse/mkdocs.yml --remote-branch main;
-          echo [ Completed Deploying The Website ];
+        run: |
+          echo [ Deploy The Webstie ]
+          cd Gh05tVerse
+          mkdocs gh-deploy --config-file ./Gh05tVerse/mkdocs.yml --remote-branch main
+          echo [ Completed Deploying The Website ]
