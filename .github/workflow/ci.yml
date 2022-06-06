@@ -7,11 +7,11 @@ on:
   #  - "v*.*.*"
   push:
     branches:
-      - master
+      - main
       - GitHubActions
   pull_request:
     branches:
-      - master
+      - main
       - GitHubActions
   
 jobs:
