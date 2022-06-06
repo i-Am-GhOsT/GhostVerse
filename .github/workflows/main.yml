@@ -43,16 +43,16 @@ jobs:
           python-version: '3.x'
 
       # Runs Commands To Install Python Dependencies
-      - name: Insatll Python Dependencies
-        run: >
-          echo [ Installing The Python Dependencies ]
-          pip install mkdocs mkdocs-material
-          echo [ Completed Installing Python Dependencies ]
-
-      # Deploy The mkdocs webstie
-      - name: Deploy mkdocs Webstie
+      - name: Install Python Dependencies
         run: |
-          echo [ Deploy The Webstie ]
+          echo [ Installing The Python Dependencies ] \n
+          pip install mkdocs mkdocs-material
+          echo [ Completed Installing Python Dependencies ] \n
+ 
+      # Deploy The mkdocs webstie
+      - name: Deploy mkdocs Website
+        run: |
+          echo [ Deploy The Webstie ] \n
           cd Gh05tVerse
           mkdocs gh-deploy --config-file ./Gh05tVerse/mkdocs.yml --remote-branch main
-          echo [ Completed Deploying The Website ]
+          echo [ Completed Deploying The Website ] \n
