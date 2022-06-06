@@ -43,7 +43,8 @@ jobs:
           python-version: '3.x'
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Insatll Python Dependencies
         run: |
-          echo [ Add other actions to build ]
-          echo [ Test, and deploy your project. ]
+          echo [ Installing The Python Dependencies ]
+          pip install -r requirements.txt
+          echo [ Completed Installing Python Dependencies ]
