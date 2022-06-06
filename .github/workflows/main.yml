@@ -52,7 +52,7 @@ jobs:
       # Deploy The mkdocs webstie
       - name: Deploy mkdocs Website
         run: |
-          echo [ Deploy The Webstie ] \n
+          pwd
           cd Gh05tVerse
-          mkdocs gh-deploy --remote-branch main
+          mkdocs gh-deploy --remote-branch GithubActions
           echo [ Completed Deploying The Website ] \n
