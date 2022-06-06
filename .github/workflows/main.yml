@@ -42,9 +42,19 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Runs a set of commands using the runners shell
+      # Runs Commands To Install Python Dependencies
       - name: Insatll Python Dependencies
         run: |
           echo [ Installing The Python Dependencies ]
           pip install mkdocs mkdocs-material
+          echo [ Completed Installing Python Dependencies ]
+
+      # Build The mkdocs webstie
+      - name: Build mkdocs Webstie
+        run: |
+          echo [ Building The Webstie ]
+          cd ./Gh05tVerse
+          mkdocs build
+          pwd
+          cd ..
           echo [ Completed Installing Python Dependencies ]
