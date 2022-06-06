@@ -63,5 +63,5 @@ jobs:
         run: |
           echo [ Deploy The Webstie ]
           cd Gh05tVerse
-          mkdocs gh-deploy
+          mkdocs gh-deploy --remote-branch main -m "Building New Website" --verbose
           echo [ Completed Building The Website ]
