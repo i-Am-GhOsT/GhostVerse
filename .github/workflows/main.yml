@@ -54,5 +54,5 @@ jobs:
         run: |
           echo [ Deploy The Webstie ] \n
           cd Gh05tVerse
-          mkdocs gh-deploy --config-file ./Gh05tVerse/mkdocs.yml --remote-branch main
+          mkdocs gh-deploy --config-file Gh05tVerse/mkdocs.yml --remote-branch main
           echo [ Completed Deploying The Website ] \n
