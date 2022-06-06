@@ -46,5 +46,5 @@ jobs:
       - name: Insatll Python Dependencies
         run: |
           echo [ Installing The Python Dependencies ]
-          pip install -r requirements.txt
+          pip install mkdocs mkdocs-material
           echo [ Completed Installing Python Dependencies ]
