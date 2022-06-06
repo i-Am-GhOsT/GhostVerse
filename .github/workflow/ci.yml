@@ -4,21 +4,28 @@ on:
     branches:
       - main
 
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     name: Deploy docs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #CUSTOM_DOMAIN: 
-          CONFIG_FILE: Gh05tVerse/mkdocs.yml
-          EXTRA_PACKAGES: build-base
-          #GITHUB_DOMAIN: i-am-ghost.github.io/GhostVerse
-          REQUIREMENTS: requirements.txt
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: ryan-rozario/pipreqs-action-cpy@master
+
+        # Put an example of mandatory inputs here
+        with:
+          PROJECT_PATH: project_folder   #default is the root of the repository
+          REQUIREMENT_PATH: project_folder/requirements.txt  #default is requirement.
+      - name: Deploy to GH Pages
+          uses: mhausenblas/mkdocs-deploy-gh-pages@master
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
