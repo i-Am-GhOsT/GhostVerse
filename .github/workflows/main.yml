@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build And Deploy Gh05tVerse mkdocs Website
+name: Build And Deploy Gh05tVerse mkdoc Website
 
 # Controls when the workflow will run
 on:
