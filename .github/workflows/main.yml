@@ -6,9 +6,15 @@ name: Build And Deploy Gh05tVerse mkdocs Website
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ Deploy, GitHubActions ]
+    branches: 
+      - main
+      - Deploy
+      - GitHubActions
   pull_request:
-    branches: [ Deploy, GitHubActions ]
+    branches:
+      - main
+      - Deploy
+      - GitHubActions
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,8 +36,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: Deploy
-        run: git checkout HEAD^
 
       # Runs a single command using the runners shell
       - name: Check Current Files & Landing Folder
@@ -54,6 +58,5 @@ jobs:
         run: |
           pwd
           cd Gh05tVerse
-          git pull
           mkdocs gh-deploy --clean --remote-branch main
           echo [ Completed Deploying The Website ] \n
