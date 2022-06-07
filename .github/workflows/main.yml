@@ -54,5 +54,5 @@ jobs:
         run: |
           pwd
           cd Gh05tVerse
-          mkdocs gh-deploy --remote-branch main
+          mkdocs gh-deploy --clean --remote-branch main
           echo [ Completed Deploying The Website ] \n
