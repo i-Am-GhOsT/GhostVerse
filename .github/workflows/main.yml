@@ -32,6 +32,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout Github Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          repository: ${{ github.workspace }}
+        run: echo ${{ github.workspace }}
 
       # Runs a single command using the runners shell
       - name: Check Current Files & Landing Folder
@@ -54,5 +58,6 @@ jobs:
         run: |
           pwd
           cd Gh05tVerse
-          mkdocs gh-deploy --remote-branch main
+          git pull
+          mkdocs gh-deploy --clean --remote-branch main
           echo [ Completed Deploying The Website ] \n
