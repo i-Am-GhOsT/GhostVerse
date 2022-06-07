@@ -1,18 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build And Deploy Gh05tVerse mkdoc Website
+name: Build And Deploy Gh05tVerse mkdocs Website
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches:
-    - main
-    - GithubActions
+    branches: [ Deploy, GitHubActions ]
   pull_request:
-    branches:
-    - main
-    - GitHubActions
+    branches: [ Deploy, GitHubActions ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
