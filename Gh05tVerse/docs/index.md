@@ -21,9 +21,14 @@
 
 ---
 
-**A Tweet Of Different Thought**
+
+<div align="center">
+
+<h3>A Tweet Of Different Thought</h3>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to Get Rich (without getting lucky):</p>&mdash; Naval (@naval) <a href="https://twitter.com/naval/status/1002103360646823936?ref_src=twsrc%5Etfw">May 31, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
 
 ---
 ## 📚 CSE Foundation
