@@ -73,11 +73,17 @@ All the mentioned list item requires basic overall knowledge
 
 - One thing to keep in mind, that experienced DevOps engineers are getting their cloud certification as the world is moving towards cloud. So if you want to be in a better positon, my suggestion will be to have some cloud knowledge to land in a better job.
 - Let's hear from people, who are actually done the transition to devops and happliy working on the domain.
-    - [Kunal Kushwaha Video](https://www.youtube.com/watch?v=r40DtAzZvcY)
-    - [QA to DevOps Transition Video](https://www.youtube.com/watch?v=thLVD5vtJKE)
-    - [Experience 3](https://www.youtube.com/watch?v=ybAY-q4-d9Q)
-    - [Experience 4](https://www.youtube.com/watch?v=bTMVj6DPdnY)
-    - [Experience 5](https://www.youtube.com/watch?v=xcxrp5sEBtI)
+    
+    1. **Kunal Kushwaha Talks**
+        [![Kunal Kushwaha Video](https://img.youtube.com/vi/r40DtAzZvcY/default.jpg)](https://youtu.be/r40DtAzZvcY)
+    2. **QE To DevOps Developer**
+        [![QE To DevOps Developer](https://img.youtube.com/vi/thLVD5vtJKE/default.jpg)](https://youtu.be/thLVD5vtJKE)
+    3. **Switching To DevOps & Cloud**
+        [![Switching To DevOps & Cloud](https://img.youtube.com/vi/ybAY-q4-d9Q/default.jpg)](https://youtu.be/ybAY-q4-d9Q)
+    4. **Switching International Jobs In DevOps & Cloud**
+        [![Switching International Jobs In DevOps & Cloud](https://img.youtube.com/vi/bTMVj6DPdnY/default.jpg)](https://youtu.be/bTMVj6DPdnY)
+    5. **After Switching In DevOps & Cloud**
+        [![After Switching In DevOps & Cloud](https://img.youtube.com/vi/xcxrp5sEBtI/default.jpg)](https://youtu.be/xcxrp5sEBtI)
 
 ---
 ## **Resouces To Study And Learn**
@@ -88,9 +94,13 @@ Most of the resources are free. But there is in anthing paid found from the link
 1. **Videos To Start Growing Your Interest**
         
     - *What is Devops ?*
-        - [Video1](https://www.youtube.com/watch?v=Xrgk023l4lI)
-        - [Video2](https://www.youtube.com/watch?v=_Gpe1Zn-1fE)
-        - [Video3](https://www.youtube.com/watch?v=Me3ea4nUt0U)
+        - **Defination 1** 
+            [![Video1](https://img.youtube.com/vi/Xrgk023l4lI/default.jpg)](https://youtu.be/Xrgk023l4lI)
+        -   **Defination 2**
+            [![Video1](https://img.youtube.com/vi/Gpe1Zn-1fE/default.jpg)](https://youtu.be/Gpe1Zn-1fE)
+        -  **Defination 3**
+            [![Video1](https://img.youtube.com/vi/Me3ea4nUt0U/default.jpg)](https://youtu.be/Me3ea4nUt0U)
+
     - *What is DevOpsSec ?*
         - [Video1](https://www.youtube.com/watch?v=nrhxNNH5lt0)
         - [Video2](https://www.youtube.com/watch?v=iaafAnFX_0E)
